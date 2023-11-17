@@ -2,23 +2,23 @@
 using namespace std;
 class claculator{
     private:
-        int a,b;
+        float a,b;
         char ch,op;
         void input(){
                 cout<<"Enter first number "; cin>>a;
                 cout<<"Enter second number "; cin>>b;
                 cout<<"Enter  opertaor (+,-,*,/) :"; cin>>op;
             }
-            int add(){
+            float add(){
                 return a+b;
             }
-            int subtractor(){
+            float subtractor(){
                 return a-b;
             }
-            int multiply(){
+            float multiply(){
                 return a*b;
             }
-            int divide(){
+            float divide(){
                 return a/b;
             }
         public:
@@ -38,14 +38,14 @@ class claculator{
                     case '*':
                         cout<<a<<"*"<<b<<"="<<multiply();
                         break;
-                        case '/':
+                    case '/':
                         cout<<a<<"/"<<b<<"="<<divide();
                         break;
-                        default:
+                    default:
                         cout<<"\ninvalid Entry. Try again"<<endl;
                     }
-                    cout<<"\n\nDo you want to perform to another calculation : (y/n)";
-                    cin>>ch;
+                        cout<<"\n\nDo you want to perform to another calculation : (y/n)";
+                        cin>>ch;
                 }
                 
             }
